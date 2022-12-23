@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#User_Details {
+    overflow-y: scroll;
+    width: 700px;
+    height: 720px;
+    background: linear-gradient(rgba(10, 8, 8, 0.8), rgba(6, 157, 233, 0.8));
+    position: fixed;
+    top: 3%;
+    left: 28%;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 20px 40px #676464;
+}
+
+#User_Details p {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: serif;
+    color: white;
+    font-weight: bolder;
+}
+
+#User_Details span {
+    font-size: 1em;
+    font-family: serif;
+    color: rgba(0, 170, 255, 0.961);
+}
+
+#User_Details .form p {
+    position: absolute;
+    left: 10%;
+    font-size: 1.2em;
+    font-family: serif;
+    font-weight: bold;
+    color: white;
+}
+
+#User_Details .form p:hover {
+    position: absolute;
+    left: 8%;
+    font-size: 1.3em;
+    font-family: serif;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+}
+
+#User_Details .form label input {
+    margin-top: 10px;
+    padding: 1px 5px;
+    font-weight: bold;
+    position: relative;
+    left: 25%;
+    font-family: serif;
+    font-size: 1.1em;
+    width: 400px;
+    height: 40px;
+    color: rgb(11, 117, 247);
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#User_Details .form label input:hover {
+    padding: 10px;
+    height: 45px;
+    border: 3px solid black;
+    outline: none;
+    font-size: 1.3em;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.update {
+    margin-left: 270px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 45px;
+    background-color: rgba(14, 79, 112, 0.973);
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.update:hover {
+    margin-left: 250px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 60px;
+    border: 5px solid white;
+    background-color: green;
+    outline: none;
+    font-size: 1.8em;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.cancel {
+    margin-left: 60px;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(6, 157, 233, 0.8);
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.cancel a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+#emaill,
+#passwordd,
+#firstnamee,
+#lastnamee,
+#numberr,
+#genderr,
+#agee {
+    display: block;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: bold;
+    padding: 5px;
+    text-align: center;
+    color: yellow;
+}
+
+#User_Details form label.valid .emailText,
+#User_Details form label.valid .passText,
+#User_Details form label.valid .firstnameText,
+#User_Details form label.valid .lastnameText,
+#User_Details form label.valid .phoneText,
+#User_Details form label.valid .genderText,
+#User_Details form label.valid .ageText {
+    color: #00ff00;
+}
+
+#User_Details form label.invalid .emailText,
+#User_Details form label.invalid .passText,
+#User_Details form label.invalid .firstnameText,
+#User_Details form label.invalid .lastnameText,
+#User_Details form label.invalid .phoneText,
+#User_Details form label.invalid .genderText,
+#User_Details form label.invalid .ageText {
+    color: red;
+}
+
+#User_Details .form label.valid::before,
+#User_Details .form label.invalid::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 18px;
+    right: 5px;
+    z-index: 100;
+}
+
+#User_Details form label.valid::before {
+    background: url(check.svg)no-repeat center /cover;
+}
+
+#User_Details form label.invalid::before {
+    background: url(error.png)no-repeat center /cover;
+}
+
+.form label {
+    position: relative;
+    display: block;
+}
+
+#User_Details form label #firstnamee,
+#User_Details form label #lastnamee,
+#User_Details form label #numberr,
+#User_Details form #flex-container #flex2 label #genderr,
+#User_Details form #flex-container #flex2 label #agee {
+    color: red;
+    font-size: 15px;
+}
